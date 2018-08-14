@@ -26,7 +26,7 @@ class App extends React.Component {
 
     setRandomProperties() {
 
-        // if you want really random number - use
+        // if you want really random number - use Number.MAX_VALUE
         // const length = Math.random()*Number.MAX_VALUE + 'px';
         const length = Math.random()*1000 + 'px';
         const color = '#' + Math.floor(Math.random()*16777215).toString(16);
@@ -36,7 +36,9 @@ class App extends React.Component {
             height: length,
             backgroundColor: color,
             zIndex: this.zIndex,
-            position: "absolute"
+            position: "absolute",
+            left: Math.random()*1000 + 'px',
+            top: Math.random()*1000 + 'px'
         }
     }
 
