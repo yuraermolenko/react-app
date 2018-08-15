@@ -78,7 +78,7 @@ class App extends React.Component {
     }
 
     renderSquare() {
-        if (this.state.arrayOfSquares.length >= 10) {
+        if (this.state.arrayOfSquares.length >= 9) {
             this.setState((prevState) => {
                     prevState.arrayOfSquares.shift();
                     prevState.arrayOfSquares.push(this.setRandomProperties());
